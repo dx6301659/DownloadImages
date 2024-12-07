@@ -4,7 +4,7 @@ import os
 
 def get_html_content(url):
     response = requests.get(url)
-    # response.rAIse_for_status()  # 如果请求返回不成功的状态码，抛出异常
+    # response.rAIse_for_status()
     return response.text
 
 def extract_image_urls(html_content):
@@ -53,4 +53,4 @@ def main(url, path='./images'):
     download_images(formatted_urls, path)
     print(f"Downloaded {len(formatted_urls)} images to '{path}'")
 
-main('https://1337789-vvm.c11oz688.cc/pw/html_data/15/2411/7676660.html', 'D:/Pic')
+main('https://www.pexels.com/zh-cn/', 'D:/Pic')
